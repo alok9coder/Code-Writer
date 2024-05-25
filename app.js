@@ -2,7 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import https from "https";
 import fs from "node:fs";
-import CSVReadWrite from "./CSVReadWrite.js";
+import CSVReadWrite from "./modules/CSVReadWrite.js";
 
 const app = express();
 const port = 7000;
