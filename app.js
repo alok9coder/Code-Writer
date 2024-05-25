@@ -19,9 +19,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
     const rcsv = new CSVReadWrite("public/csv/countries.csv");
-    const readData = rcsv.readFile();
+    const readData = rcsv.readCSV();
     rcsv.printFileDetails();
     //console.log("GET READ DATA RETURNED RESULT:\n", readData);
+    //console.log("Keys:\t", Object.keys(readData[0]));
+    //console.log("Values:\t", Object.values(readData[0]));
+
+    const writeReply = rcsv.writeCSV(readData, 'Object.csv');
+    console.log(writeReply);
 
     res.json(readData);
 });
