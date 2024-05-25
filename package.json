@@ -1,0 +1,27 @@
+{
+  "name": "code-writer",
+  "version": "1.0.0",
+  "description": "Java Script code which is intended to write Java Script Code and Save as JS files with minimum instruction to reduce the repetitive code.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alok9coder/Code-Writer.git"
+  },
+  "author": "Alok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alok9coder/Code-Writer/issues"
+  },
+  "homepage": "https://github.com/alok9coder/Code-Writer#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "https": "^1.0.0",
+    "pg": "^8.11.5"
+  }
+}
